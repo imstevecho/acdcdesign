@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link href="style.css" rel="stylesheet">
+    <title>Account</title>
+</head>
+
+<body>
+
+<nav>
+    <div class="navbar-logo">
+        <img src="logo.jpg" alt="Logo">
+    </div>
+     <div class="nav-trigger">
+                    <span class="nav-span" aria-hidden="true"></span>
+                </div>
+    <ul class="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Order History</a></li>
+        <li class="active"><a href="#">Account</a></li>
+        <li><a href="#">Logout</a></li>
+    </ul>
+</nav>
+
+      <!-- Page Content -->
+    <div class="container top-margin-80">
+
+
+        <div class="container-fluid">
+            <form id="signup_form">
+                <input type="hidden" name="usestforbt" id="use_st_for_bt" value="">
+                <input type="hidden" name="sqlcommand" id="sql_command" value="insert">
+                <input type="hidden" name="userid" id="user_id" value="">
+                <div class="row">
+                   <div class="col-md-12"><p class="help-block"></p>
+                    <h2> Account Info </h2></div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 form-group">
+
+                        <label for="firstname">First Name:</label>
+                        <input class="form-control" type="text" name="firstname" id="first_name" value="" placeholder="First Name" required>
+                        <p class="help-block"></p>
+
+                    </div>
+
+                    <div class="col-md-4 form-group">
+
+                        <label for="lastname">Last Name:</label>
+                        <input class="form-control" type="text" name="lastname" id="last_name" value="" placeholder="Last Name" required>
+                        <p class="help-block"></p>
+
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label for="companyname">Company Name:</label>
+                        <input class="form-control" type="text" name="companyname" id="company_name" value="" placeholder="Company Name" required>
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+
+                    <div class="col-md-6 form-group">
+
+                        <label for="phone">Phone:</label>
+                        <input class="form-control" type="text" name="phone" value="" id="phone" placeholder="Phone Number">
+                        <p class="help-block"></p>
+                    </div>
+                    <div class="col-md-6 form-group">
+
+                        <label for="email">Email:</label>
+                        <input class="form-control " type="text" name="email" id="email" value="" required placeholder="Enter email address">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 form-group">
+
+                        <label for="password">Password:</label>
+                        <input class="form-control " type="password" name="password" value="" id="user_password" placeholder="Enter password">
+                        <p class="help-block"></p>
+                    </div>
+                    <div class="col-md-6 form-group">
+
+                        <label for="password_confirmation">Re-enter Password</label>
+                        <input class="form-control " type="password" name="password_confirmation" value="" id="user_password_confirmation" placeholder="Re-enter Password">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                    <h2>Shipping Address</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 form-group">
+                   
+                        <label for="sttreet">Street:</label>
+                        <input class="form-control " type="text" name="ststreet" value="" id="st_street" placeholder="Street" required>
+                        <p class="help-block"></p>
+               
+                </div>
+                 <div class="col-md-4 form-group">
+           
+                        <label for="stunit">Unit:</label>
+                        <input class="form-control " type="text" name="stunit" value="" id="st_unit" placeholder="Unit">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+               
+       <div class="row">
+                 <div class="col-md-6 form-group">
+               
+                        <label for="stcity">City:</label>
+                        <input class="form-control " type="text" name="stcity" value="" id="st_city" placeholder="City" required>
+                        <p class="help-block"></p>
+                    </div>
+             
+                <div class="col-md-6 form-group">
+                    
+                        <label for="stprovince">Province:</label>
+                        <select class="form-control " name="stprovince" value="" id="st_province" required>
+          <option value="">Select One</option>
+              <option value="AB">AB</option>
+              <option value="BC">BC</option>
+              <option value="MB">MB</option>
+              <option value="NB">NB</option>
+              <option value="NL">NL</option>
+              <option value="NS">NS</option>
+              <option value="NT">NT</option>
+              <option value="NU">NU</option>
+              <option value="ON">ON</option>
+              <option value="PE">PE</option>
+              <option value="QC">QC</option>
+              <option value="SK">SK</option>
+              <option value="YT">YT</option>
+      </select>
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+
+            <div class="row">
+              
+               
+                <div class="col-md-6 form-group">
+                
+                        <label for="stpostalcode">Postal Code:</label>
+                        <input class="form-control " type="text" name="stpostalcode" value="" id="st_postalcode" placeholder="Postal Code" required>
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                    <h2>Billing Address</h2>
+                    </div>
+                </div>
+              <div class="row">
+                   <div class="col-md-12 form-group">
+                    <label for="samewithst">Same as Ship To Address:</label>
+                    <input type="checkbox" name="samewithst" id="same_with_st" onchange="change_same_with_st(this)">
+                </div>
+              </div>
+               
+<div class="row">
+                <div class="col-md-8 form-group">
+                    
+                        <label for="btstreet">Street:</label>
+                        <input class="form-control " type="text" name="btstreet" value="" id="bt_street" placeholder="Street">
+                        <p class="help-block"></p>
+                   
+                </div>
+                <div class="col-md-4 form-group">
+              
+                        <label for="btunit">Unit:</label>
+                        <input class="form-control " type="text" name="btunit" value="" id="bt_unit" placeholder="Unit">
+                        <p class="help-block"></p>
+        
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-6 form-group">
+             
+                        <label for="btcity">City:</label>
+                        <input class="form-control " type="text" name="btcity" value="" id="bt_city">
+                        <p class="help-block"></p>
+                
+                </div>
+                <div class="col-md-6 form-group">
+                  
+                        <label for="btprovince">Province:</label>
+                        <select class="form-control " name="btprovince" value="" id="bt_province">
+          <option value="">Select One</option>
+              <option value="AB">AB</option>
+              <option value="BC">BC</option>
+              <option value="MB">MB</option>
+              <option value="NB">NB</option>
+              <option value="NL">NL</option>
+              <option value="NS">NS</option>
+              <option value="NT">NT</option>
+              <option value="NU">NU</option>
+              <option value="ON">ON</option>
+              <option value="PE">PE</option>
+              <option value="QC">QC</option>
+              <option value="SK">SK</option>
+              <option value="YT">YT</option>
+      </select>
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+      
+                <div class="row">
+                <div class="col-md-6 form-group">
+                 
+                        <label for="btpostalcode">Postal Code:</label>
+                        <input class="form-control " type="text" name="btpostalcode" value="" id="bt_postalcode">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+<div class="row">
+    <button type="submit" class="btn btn-primary btn-lg btn-block btn-login btn-long" onclick="insertUser()">Next</button>
+</div>
+                
+
+            </form>
+        </div>
+
+    </div>
+    <!-- /.container -->
+           <footer>
+     <ul class="footer-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+        <p>Copyright &copy; 2018</p>
+</footer>    
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript"> //Mobile Nav
+   $('.nav-trigger').click(function(){
+       var nav= $('.main-nav');
+        nav.slideToggle(200);
+       $('.nav-trigger').toggleClass('mobile-nav');
+   });</script>
+</body>
+
+</html>

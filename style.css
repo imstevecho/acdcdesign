@@ -1,0 +1,355 @@
+
+.login-body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),url(bg/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.login-logo{
+    width:50%;
+    float:left;
+}
+.login-logo img {
+    width:40%;
+    margin:15vh 30% 0 30%;
+    box-shadow:5px 5px 20px 5px rgba(0, 0, 0, 0.38);
+}
+.form-signin{
+    width:50%;
+    float:right;
+    color: #fff;
+    padding:30px 10%;
+    margin-top:15vh;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: 20px;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+}
+.btn-login{
+    background-color: #d62027;
+    border-color: #d62027;
+    transition: all 0.5s;
+    margin:10px 0 0 0;
+}
+.btn-login:hover{
+    background-color:#b90000;
+    border-color: #b90000
+}
+.login-bottom-para{
+    color: #fff;
+    margin:80px 0 0 0;
+    font-size: 140%;
+    line-height: 150%;
+}
+.air-canada-img{
+    text-align: right;
+}
+.air-canada-img img{
+    width:70%;
+}
+
+/*Navbar*/
+nav{
+    margin-bottom:30px;
+
+}
+.navbar-logo{
+    position: absolute;
+    top:5px;
+    left:9%;
+}
+.navbar-logo img{
+    width:100px;
+}
+.main-nav{
+    background-color: #ffffff;
+    z-index:999;
+    width:100%;
+    margin:0;
+    padding-right:5%;
+    text-align: right;
+    box-shadow:1px 1px 2px rgba(0, 0, 0, 0.38);
+    list-style: none;
+}
+.main-nav li{
+    display: inline-block;
+    padding:20px 20px 20px 20px;
+    border-bottom:2px solid transparent;
+    transition: all 0.5s;
+}
+.main-nav li a{
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.4s;
+    color:#000;
+}
+.main-nav li:hover,
+.main-nav li.active{
+    border-bottom:2px solid #d62027;
+}
+.main-nav li:hover a,
+.main-nav li.active a{
+    color:#d62027
+}
+/*Mobile navigation*/
+.nav-trigger {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    display: none;
+    cursor: pointer;
+    right: 0;
+    margin: 5px;
+    transition: all 0.2s;
+}
+
+.nav-trigger span,
+.nav-trigger span:before,
+.nav-trigger span:after {
+    position: absolute;
+    height: 2px;
+    width: 25px;
+    background-color: #333;
+    transition: all 0.2s;
+} 
+
+.nav-trigger span {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-trigger span:before {
+    content: '';
+    top: 0;
+    left: 0;
+    transform: translateY(-8px);
+}
+
+.nav-trigger span:after {
+    content: '';
+    top: 0;
+    left: 0;
+    transform: translateY(8px);
+}
+
+.mobile-nav span {
+    background-color: transparent;
+}
+
+.mobile-nav span:after {
+    transform: rotate(-45deg);
+}
+
+.mobile-nav span:before {
+    transform: rotate(45deg);
+}
+
+.mobile-nav.nav-trigger {
+    transform: rotate(180deg);
+}
+.main-nav li.nav-selected a:link{
+   border-bottom:2px solid #6bcef7;
+}
+/*Products page*/
+.box-shadow { box-shadow:1px 1px 20px rgba(0, 0, 0, 0.18); }
+
+h4{
+    font-size: 125%;
+}
+.top-margin-80{
+    margin-top: 80px
+}
+.highlight-red{
+    color:#d62027;
+    transition: all 0.5s 
+}
+a.highlight-red:hover{
+    color:#b90000;
+    text-decoration: none;
+}
+.btn-modal{
+    display: block;
+    margin:10px 0;
+}
+.modal-text{
+    font-size: 90%;
+}
+.product-card{
+    transition: all 0.5s;
+}
+.product-card:hover{
+    transform: translateY(-10px);
+    box-shadow:5px 10px 20px rgba(0, 0, 0, 0.18);
+}
+/*Order Page*/
+.image-tooltip{
+    width:140px;
+}
+.bold{
+    font-weight: 700;
+}
+/*Signup Page*/
+.btn-long{
+    margin-bottom:40px;
+}
+/*Footer*/
+footer {
+    text-align: center;
+    padding:15px 0;
+    color: #959595;
+    background-color: #000000;
+    box-shadow:-1px -1px 5px rgba(0, 0, 0, 0.28);
+}
+.sticky-footer{
+    position: absolute;
+    bottom:0;
+width:100%;
+}
+.footer-nav{
+    list-style: none;
+}
+.footer-nav li{
+    display: inline-block;
+    padding:5px 2%
+}
+.footer-nav li a{
+color: #c1c1c1;
+    font-weight: 600;
+      transition: all 0.5s
+}
+.footer-nav li a:hover,
+.footer-nav li a:active{
+text-decoration: none;
+  color:#d62027;
+   
+}
+@media only screen and (max-width:767px) {
+    .login-body {
+    background-attachment: scroll;
+        height:100vh;
+}
+
+.login-logo{
+    width:100%;
+    float:none;
+}
+.login-logo img {
+    width:20%;
+    margin:5vh 40% 0 40%;
+}
+.form-signin{
+    width:100%;
+    float:none;
+    margin-top:0;
+}
+
+
+
+.login-bottom-para{
+    text-align: center;
+    margin:0px 0 0 0;
+    font-size: 110%;
+    line-height: 150%;
+}
+.air-canada-img{
+    text-align: center;
+}
+.air-canada-img img{
+    width:20%;
+}
+    /*--------------------------*/
+ 
+.main-nav li{
+    padding:5px 0;
+    border-bottom:0;
+}
+    .main-nav li:hover,
+.main-nav li.active{
+    border-bottom:0;
+}
+    .navbar-logo{
+        position: relative;
+    }
+    .navbar-logo img{
+        width:80px;
+    }
+    .main-nav {
+        text-align: center;
+        margin: 0px auto 0 auto;
+        display: none;
+        width: 100%;
+    }
+    .main-nav li {
+        display: block;
+        margin-left: 0px;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        padding: 10px 0;
+        margin: 0 auto;
+        font-size: 100%;
+    }
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        color: #d62027;
+    }
+    .nav-trigger {
+        display: block;
+    }
+    .main-nav li.active a:link{
+   border-bottom:0;
+        color:#d62027;
+}
+    .btn-long{
+        margin:0 10% 40px 10%;
+    }
+    .top-margin-80{
+    margin-top: 0px
+}
+    .image-tooltip{
+    width:120px;
+}
+}
+
+@media only screen and (max-width:480px) {
+    .navbar-logo img{
+        width:50px;
+    }
+    .order-form{
+        font-size: 80%;
+        padding:0;
+    }
+    .image-tooltip{
+    width:80px;
+}
+}
+@media only screen and (max-width:320px) {
+.order-form{
+        font-size: 60%;
+    }
+}
