@@ -183,6 +183,12 @@ h4{
 .top-margin-80{
     margin-top: 80px
 }
+.bg-light-shadow{
+    background-color: #f9f9f9;
+    margin:30px 0;
+    padding:20px 2%;
+    box-shadow:8px 8px 20px 5px rgba(0, 0, 0, 0.20);
+}
 .highlight-red{
     color:#d62027;
     transition: all 0.5s 
@@ -211,6 +217,9 @@ a.highlight-red:hover{
 }
 .bold{
     font-weight: 700;
+}
+.pdf-container{
+    margin-bottom:50px;
 }
 /*Signup Page*/
 .btn-long{

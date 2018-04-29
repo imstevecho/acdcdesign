@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <title>Order History</title>
 </head>
 
@@ -39,9 +40,10 @@
                 <input type="hidden" name="usestforbt" id="use_st_for_bt" value="">
                 <input type="hidden" name="sqlcommand" id="sql_command" value="insert">
                 <input type="hidden" name="userid" id="user_id" value="">
+                         <div class="bg-light-shadow">
                 <div class="row">
                    <div class="col-md-12"><p class="help-block"></p>
-                    <h2> Client Info </h2></div>
+                    <h2><i class="ion-information-circled"></i>&nbsp;Client Info </h2></div>
                     
                 </div>
 
@@ -100,11 +102,13 @@
                         <p class="help-block"></p>
                     </div>
                 </div>
+                </div>
+                <div class="bg-light-shadow">
                 <div class="row">
                     <div class="col-md-12">
-                    <h2>Shipping Address</h2>
+                        <h2><i class="ion-ios-home"></i>&nbsp;Shipping Address</h2>
                     </div>
-                </div>
+                    </div>
                 <div class="row">
                     <div class="col-md-8 form-group">
                    
@@ -162,9 +166,11 @@
                         <p class="help-block"></p>
                     </div>
                 </div>
+                </div>
+                         <div class="bg-light-shadow">
                 <div class="row">
                     <div class="col-md-12">
-                    <h2>Billing Address</h2>
+                    <h2><i class="ion-ios-list"></i>&nbsp;Billing Address</h2>
                     </div>
                 </div>
               <div class="row">
@@ -229,11 +235,13 @@
                         <p class="help-block"></p>
                     </div>
                 </div>
+                </div>
+                         
 <div class="row">
-    <button type="submit" class="btn btn-primary btn-lg btn-block btn-login btn-long" onclick="insertUser()">Next</button>
+    <button type="submit" class="btn btn-primary btn-lg btn-block btn-login btn-long box-shadow" onclick="insertUser()">Next</button>
 </div>
                 
-
+         
             </form>
         </div>
 

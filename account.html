@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 
 <head>
@@ -9,29 +9,29 @@
     <meta name="author" content="">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-<link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <title>Account</title>
 </head>
 
 <body>
 
-<nav>
-    <div class="navbar-logo">
-        <img src="logo.jpg" alt="Logo">
-    </div>
-     <div class="nav-trigger">
+    <nav>
+        <div class="navbar-logo">
+            <img src="logo.jpg" alt="Logo">
+        </div>
+         <div class="nav-trigger">
                     <span class="nav-span" aria-hidden="true"></span>
                 </div>
-    <ul class="main-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <ul class="main-nav">
+            <li><a href="#">Home</a></li>
+        <li ><a href="#">About</a></li>
         <li><a href="#">Order History</a></li>
         <li class="active"><a href="#">Account</a></li>
         <li><a href="#">Logout</a></li>
-    </ul>
-</nav>
-
-      <!-- Page Content -->
+        </ul>
+    </nav>
+    <!-- Page Content -->
     <div class="container top-margin-80">
 
 
@@ -40,9 +40,10 @@
                 <input type="hidden" name="usestforbt" id="use_st_for_bt" value="">
                 <input type="hidden" name="sqlcommand" id="sql_command" value="insert">
                 <input type="hidden" name="userid" id="user_id" value="">
+                         <div class="bg-light-shadow">
                 <div class="row">
                    <div class="col-md-12"><p class="help-block"></p>
-                    <h2> Account Info </h2></div>
+                    <h2><i class="ion-information-circled"></i>&nbsp;Account Info </h2></div>
                     
                 </div>
 
@@ -101,11 +102,13 @@
                         <p class="help-block"></p>
                     </div>
                 </div>
+                </div>
+                <div class="bg-light-shadow">
                 <div class="row">
                     <div class="col-md-12">
-                    <h2>Shipping Address</h2>
+                        <h2><i class="ion-ios-home"></i>&nbsp;Shipping Address</h2>
                     </div>
-                </div>
+                    </div>
                 <div class="row">
                     <div class="col-md-8 form-group">
                    
@@ -163,9 +166,11 @@
                         <p class="help-block"></p>
                     </div>
                 </div>
+                </div>
+                         <div class="bg-light-shadow">
                 <div class="row">
                     <div class="col-md-12">
-                    <h2>Billing Address</h2>
+                    <h2><i class="ion-ios-list"></i>&nbsp;Billing Address</h2>
                     </div>
                 </div>
               <div class="row">
@@ -230,27 +235,27 @@
                         <p class="help-block"></p>
                     </div>
                 </div>
+                </div>
+                         
 <div class="row">
-    <button type="submit" class="btn btn-primary btn-lg btn-block btn-login btn-long" onclick="insertUser()">Next</button>
+    <button type="submit" class="btn btn-primary btn-lg btn-block btn-login btn-long box-shadow" onclick="insertUser()">Next</button>
 </div>
                 
-
+         
             </form>
         </div>
 
     </div>
     <!-- /.container -->
-           <footer>
+ <footer>
      <ul class="footer-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Order History</a></li>
-            <li><a href="#">Account</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
         <p>Copyright &copy; 2018</p>
-</footer>    
-    <script
+</footer>   
+   <script
 			  src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			  crossorigin="anonymous"></script>

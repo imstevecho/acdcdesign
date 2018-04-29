@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <title>Purchase Summary</title>
 </head>
 
@@ -33,9 +34,10 @@
     <div class="container top-margin-80">
 
         <form id="order_form">
+           <div class="bg-light-shadow">
             <div class="row">
 
-                <h3>Purchase Summary</h3>
+                <h3><i class="ion-android-cart"></i>&nbsp;Purchase Summary</h3>
 
 
                 <table class="table table-bordered table-sm">
@@ -144,13 +146,15 @@
                     </tbody>
                 </table>
             </div>
-            <br>
+            </div>
+        <div class="bg-light-shadow">
             <div class="row">
+               
                 <div class="col-md-6">
 
                     <div class="row">
                         <div class="col-md-12">
-                            <h3>Shipping Address</h3>
+                            <h3><i class="ion-ios-home"></i>&nbsp;Shipping Address</h3>
                         </div>
                     </div>
 
@@ -211,11 +215,12 @@
                     </div>
                    
                 </div>
+         
         <div class="col-md-6">
 
                     <div class="row">
                         <div class="col-md-12">
-                            <h3>Billing Address</h3>
+                            <h3><i class="ion-ios-list"></i>&nbsp;Billing Address</h3>
                         </div>
                     </div>
 
@@ -281,18 +286,19 @@
 
                   
                 </div>
-
+            </div>
+<div class="bg-light-shadow">
   <div class="row">
                         <div class="col-md-12 form-group">
-                            <label for="textbox2">Comment</label>
+                            <label for="textbox2"><h3><i class="ion-ios-compose"></i>&nbsp;Comment</h3></label>
                             <textarea class="col-md-6 form-control" type="text" name="comment" id="comment"></textarea>
                         </div>
                     </div>
+            </div>
 
 
 
-
-                <button class="btn btn-primary btn-lg btn-block btn-login" id="checkoutButton">Order</button>
+                <button class="btn btn-primary btn-lg btn-block btn-login box-shadow " id="checkoutButton">Order</button>
         </form>
         </div>
         <br><br>
